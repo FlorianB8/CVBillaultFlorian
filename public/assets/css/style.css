@@ -1,0 +1,158 @@
+body {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+main {
+    min-height: 90vh;
+}
+.linkNav {
+    font-size: 1.5rem;
+}
+.imgPortfolio {
+    width: 600px;
+    border: 2px solid #272727;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition-duration: 1s;
+}
+
+.imgPortfolio:hover {
+    width: 700px;
+    transition-duration: 1s;
+}
+
+.bgWhite {
+    background-color: #e7E7E7;
+}
+
+.bgDark {
+    background-color: #272727;
+}
+
+.bgGray {
+    background-color: #F0CEA0;
+    /* border-radius: 0px 10px 10px 0px */
+}
+
+.orange {
+    color: #E48100;
+}
+
+.menu,
+.footer {
+    background-color: #E48100;
+}
+
+.menu a {
+    color: #272727;
+}
+
+a:hover {
+    color: #e7E7E7;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logoPhp {
+    width: 150px;
+}
+
+.logojs {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.year {
+    background-color: #272727;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    color: #e7E7E7;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 30px solid #272727;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.hobby {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+
+.logoFooter {
+    width: 75px;
+}
+
+.footer h2 {
+    font-size: x-large;
+}
+
+.profil {
+    width: 200px;
+}
+
+@media screen and (min-width:1200px) {
+    .lineProfil {
+        border-left: 2px solid #272727;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .lineProfil {
+        border-top: 2px solid #272727;
+    }
+
+    .imgPortfolio {
+        width: 400px;
+        border: 2px solid #272727;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        transition-duration: 1s;
+    }
+}
+
+.borderRight {
+    border-right: 2px solid #272727;
+}
+
+.borderLeft {
+    border-left: 2px solid #272727;
+}
+
+
+
+@keyframes fadeEffect {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.fade {
+    animation: 1s 1 linear fadeEffect alternate;
+}
