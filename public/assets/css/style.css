@@ -90,12 +90,12 @@ a {
     margin-bottom: 0;
 }
 
+
 .hobby {
     width: 400px;
     height: 250px;
     border-radius: 20px;
 }
-
 
 .logoFooter {
     width: 75px;
@@ -115,11 +115,29 @@ a {
     }
 
 }
+@media screen and (max-width:900px) {
 
+.hobby {
+    width: 80vw;
+    height: 250px;
+    border-radius: 20px;
+}
+}
+
+@media screen and (min-width:900px) and (max-width:1200px) {
+
+    .hobby {
+        width: 40vw;
+        height: 250px;
+        border-radius: 20px;
+    }
+    }
 @media screen and (max-width:1200px) {
     .lineProfil {
         border-top: 2px solid #272727;
     }
+
+  
 
     .imgPortfolio {
         width: 400px;
