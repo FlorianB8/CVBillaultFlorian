@@ -121,10 +121,17 @@ a {
 }
 @media screen and (max-width:900px) {
 
+    
 .hobby {
-    width: 80vw;
-    height: 250px;
+    width: 70vw;
+    height: 40vw;
     border-radius: 20px;
+}
+.imgPortfolio {
+    width: 80vw;
+    border: 2px solid #272727;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition-duration: 1s;
 }
 }
 
@@ -144,7 +151,7 @@ a {
   
 
     .imgPortfolio {
-        width: 400px;
+        width: 40vw;
         border: 2px solid #272727;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         transition-duration: 1s;
