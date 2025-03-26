@@ -22,7 +22,7 @@
                 <button type="button" class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarCollapse">
                     <!-- Lien vers chaque page -->
                     <div class="navbar-nav ms-5">
                         <a class="m-4" href="./index.html">CV</a>
@@ -35,58 +35,111 @@
     </header>
     <main>
         <div class="container-fluid">
-            <div class="row mx-5 my-5 align-items-center text-center">
-                <div class="col-12 col-xl-2">
-                    <img class="profil" src="./public/assets/imgs/unnamed.jpg" alt="Photo de profil">
+            <div class="d-flex mx-5">
+                <div class="col-12 col-xl-2 ms-5">
+                    <img class="profil" src="./public/assets/imgs/photo.png" alt="Photo de profil">
                 </div>
-                <div class="col-12 col-xl-3 my-3 my-lg-0">
-                    <h1 id="firstname"> </h1>
-                    <h1 class="orange" id="lastname"></h1>
-                </div>
-                <div class="col-12 col-xl-7 lineProfil">
-                    <p class="my-3 my-lg-0 desc">
-                        Passionné du <span class="orange fw-bold">développement web</span> et constamment à l'affût des 
-                        dernières technologies, je suis un développeur en quête d'une 
-                        <span class="orange fw-bold">alternance</span> pour mettre à profit mes compétences techniques 
-                        et mon esprit créatif. Mes connaissances dans la conception 
-                        de sites web interactifs, ma capacité à résoudre efficacement 
-                        les problèmes et ma passion pour l'apprentissage continu font
-                        de moi un candidat idéal pour <span class="orange fw-bold">rejoindre votre équipe 
-                        et contribuer à l’évolution de votre entreprise. 
-                    </p>
+                <div class="row align-items-center text-center">
+                    <div class="col-12 col-xl-3 my-3 my-lg-0">
+                        <h1 id="firstname"> </h1>
+                        <h1 class="orange" id="lastname"></h1>
+                    </div>
+                    <div class="col-12 col-xl-7 lineProfil">
+                        <p class="my-3 my-lg-0 desc">
+                            Passionné du <span class="orange fw-bold">développement web</span> et constamment à l'affût des 
+                            dernières technologies, je suis un développeur en quête d'une 
+                            <span class="orange fw-bold">alternance</span> pour mettre à profit mes compétences techniques 
+                            et mon esprit créatif. Mes connaissances dans la conception 
+                            de sites web interactifs, ma capacité à résoudre efficacement 
+                            les problèmes et ma passion pour l'apprentissage continu font
+                            de moi un candidat idéal pour <span class="orange fw-bold">rejoindre votre équipe 
+                            et contribuer à l’évolution de votre entreprise. 
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="row bgDark">
                 <div class="col-12 text-white d-flex flex-column justify-content-center my-5">
-                    <h1 class="text-center orange my-5">Compétences</h1>
+                    <h1 class="text-center orange mb-5">Compétences</h1>
                     <hr class="w-75 mx-auto">
                     <div class="d-flex align-items-center justify-content-center my-5 ">
-                        <h3 class="me-5">Front-end</h3>
-                        <div class="text-center">
-                            <img class="logo my-3" src="public/assets/imgs/html.png" alt="Logo HTML">
-                            <img class="logo my-3" src="public/assets/imgs/css.png" alt="Logo CSS">
-                            <img class="logo my-3" src="public/assets/imgs/js.png" alt="Logo JavaScript">
-                            <img class="logo my-3 mx-2" src="public/assets/imgs/react.png" alt="Logo de React">
-                            <img  class="logo my-3 mx-2" src="public/assets/imgs/bootstrap.png" alt="Logo de Bootstrap">
+                        <div class="d-flex flex-wrap align-items-center justify-content-center text-center">
+                            <h3 class="me-5">Front-end</h3>
+                            <div class="cards">
+                                <figure class="card d-flex align-items-center justify-content-center">
+                                    <img class=" logo " src="public/assets/imgs/html.png" alt="Logo HTML">
+                                </figure>
+                            </div>
+                            <div class="cards">
+                                <figure class="card d-flex align-items-center justify-content-center">
+                                    <img class="logo " src="public/assets/imgs/css.png" alt="Logo CSS">
+                                </figure>
+                            </div>
+                            <div class="cards">
+                                <figure class="card d-flex align-items-center justify-content-center">
+                                    <img class="logo " src="public/assets/imgs/js.png" alt="Logo JavaScript">
+                                </figure>
+                            </div>
+                            <div class="cards">
+                                <figure class="card d-flex align-items-center justify-content-center">
+                                    <img  class="logo " src="public/assets/imgs/bootstrap.png" alt="Logo de Bootstrap">
+                                </figure>
+                            </div>
+                            <div class="cards">
+                                <figure class="card d-flex align-items-center justify-content-center">
+                                    <img  class="logo " src="public/assets/imgs/angularJS.png" alt="Logo de Bootstrap">
+                                </figure>
+                            </div>
                         </div>
                     </div>
                     <hr class="w-75 mx-auto">
-                    <div class="d-flex align-items-center justify-content-center my-5">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center">
                         <h3 class="me-lg-5 me-4">Back-end</h3>
-                        <img class="logo my-3 mx-2" src="public/assets/imgs/symfony.png" alt="Logo de Symfony">
-                        <img class="logoPhp my-3" src="public/assets/imgs/php.png" alt="Logo php">
+                        <div class="cards">
+                            <figure class="card d-flex align-items-center justify-content-center">
+                                <img class="logo" src="public/assets/imgs/php.png" alt="Logo php">
+                            </figure>
+                        </div>
                     </div>
                     <hr class="w-75 mx-auto">
-                    <div class="d-flex align-items-center justify-content-center my-5">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <h3 class="me-lg-5 me-4">Base de données</h3>
+                        <div class=" d-flex align-items-center justify-content-center text-center">
+                            <div class="cards">
+                                <figure class="card d-flex align-items-center justify-content-center">
+                                    <img class="logo" src="public/assets/imgs/sql.png" alt="Logo SQL">
+                                </figure>
+                            </div>
+                            <div class="cards">
+                                <figure class="card d-flex align-items-center justify-content-center">
+                                    <img class="logo" src="public/assets/imgs/mongoDB.png" alt="Logo MongoDB">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="w-75 mx-auto">
+                    <div class="d-flex align-items-center justify-content-center">
                         <h3 class="me-lg-5 me-4">CMS</h3>
-                        <img class="logo" src="public/assets/imgs/wp.png" alt="Logo wordpress">
+                        <div class="cards">
+                            <figure class="card d-flex align-items-center justify-content-center">
+                                <img class="logo" src="public/assets/imgs/wp.png" alt="Logo wordpress">
+                            </figure>
+                        </div>
                     </div>
                     <hr class="w-75 mx-auto">
-                    <div class="d-flex align-items-center justify-content-center my-5">
+                    <div class="d-flex align-items-center justify-content-center">
                         <h3 class="me-lg-5 me-4">Design</h3>
-                        <div class="text-center">
-                            <img class="logo m-2" src="public/assets/imgs/figma.png" alt="Logo figma">
-                            <img class="logo m-2" src="public/assets/imgs/photoshop.png" alt="Logo photoshop">
+                        <div class="text-center d-flex align-items-center justify-content-center">
+                            <div class="cards">
+                                <figure class="card d-flex align-items-center justify-content-center">
+                                    <img class="logo m-2" src="public/assets/imgs/figma.png" alt="Logo figma">
+                                </figure>
+                            </div>
+                            <div class="cards">
+                                <figure class="card d-flex align-items-center justify-content-center">
+                                    <img class="logo m-2" src="public/assets/imgs/photoshop.png" alt="Logo photoshop">
+                                </figure>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,8 +152,17 @@
                         <div class="col-12 d-flex justify-content-center text-center mt-5">
                             <p class="arrow d-flex align-items-center justify-content-center"></p>
                         </div>
+                        <div class="col-6 borderRight p-0">
+                            <div class=" bgGray text-center rounded-start pe-2">
+                                <h4 class="orange mt-3 pt-2">Développeur web en <br>alternance chez <strong>Adiict</strong></h4>
+                                <p class="pb-2">Gestion des tickets clients, développement de nouvelles fonctionnalités</p>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center text-center">
+                            <p class="white year d-flex align-items-center justify-content-center">2023</p>
+                        </div>
                         <div class="col-6 offset-6 borderLeft p-0">
-                            <div class=" bgGray rounded-end ps-2">
+                            <div class=" bgGray text-center rounded-end ps-2">
                                 <h4 id="bootstrap" class="orange mt-3 pt-2"><strong>Equipier polyvalent</strong> à Burger King</h4>
                                 <p id="bootstrapText" class="pb-2 displayText">Prise de commandes, gestion de caisses, nettoyage des salles.</p>
                             </div>
@@ -109,9 +171,9 @@
                             <p class="white year d-flex align-items-center justify-content-center">2022</p>
                         </div>
                         <div class="col-6 borderRight p-0">
-                            <div class=" bgGray text-end rounded-start pe-2">
+                            <div class=" bgGray text-center rounded-start pe-2">
                                 <h4 class="orange mt-3 pt-2">Stage chez <strong>3D Access</strong></h4>
-                                <p class="pb-2"><strong>Intégration</strong>  et <strong>amélioration</strong> de 2 sites web.</p>
+                                <p class="pb-2">Intégration et amélioration de 2 sites web.</p>
                             </div>
                         </div>
                         <div class="col-12 d-flex justify-content-center text-center mb-5">
@@ -127,8 +189,8 @@
                             <p class="arrow d-flex align-items-center justify-content-center"></p>
                         </div>
                         <div class="col-6 offset-6 borderLeft p-0">
-                            <div class=" bgGray rounded-end ps-2">
-                                <h4 class="orange mt-3 pt-2">Formation Professionnelle <strong>DWWM</strong></h4>
+                            <div class="text-center bgGray rounded-end ps-2">
+                                <h4 class="orange mt-3 pt-2">Titre professionnel de niveau 5 : Développeur web et web mobile</h4>
                                 <p class="pb-2">La Manu Amiens</p>
                             </div>
                         </div>
@@ -136,7 +198,7 @@
                             <p class="white year d-flex align-items-center justify-content-center">2021</p>
                         </div>
                         <div class="col-6 borderRight p-0">
-                            <div class=" bgGray text-end rounded-start pe-2">
+                            <div class="text-center bgGray text-end rounded-start pe-2">
                                 <h4 class="orange mt-3 pt-2">DUT <strong>Informatique</strong></h4>
                                 <p class="pb-2">IUT d'Amiens</p>
                             </div>
@@ -145,7 +207,7 @@
                             <p class="white year d-flex align-items-center justify-content-center">2019</p>
                         </div>
                         <div class="col-6 offset-6 borderLeft p-0">
-                            <div class=" bgGray rounded-end ps-2">
+                            <div class=" text-center bgGray rounded-end ps-2">
                                 <h4 class="orange mt-3 pt-2"><strong>Baccalauréat</strong> Scientifique option Sciences de l'ingénieur</h4>
                                 <p class="pb-2">Lycée Boucher de Perthes à Abbeville</p>
                             </div>
@@ -200,7 +262,7 @@
                     </div>
                 </div>
                 <div class="col-12 text-center mt-5">
-                    <h5>2023. Florian Billault</h5>
+                    <h5> Florian Billault</h5>
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@ main {
     font-size: 1.5rem;
 }
 .imgPortfolio {
-    width: 600px;
+    width: 40vw;
     border: 2px solid #272727;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition-duration: 1s;
@@ -62,7 +62,6 @@ a:hover {
 .logoPhp {
     width: 150px;
     transition-duration: 0.5s;
-
 }
 
 
@@ -101,9 +100,10 @@ a {
 
 
 .hobby {
-    border-radius: 60px;
-    width: 35vw;
-    height: 35vh;
+    /* border-radius: 150px; */
+    width: 29vw;
+    height: 34vh;
+    /* box-shadow: -22px 17px 15px 0px rgba(0,0,0,0.1); */
 }
 
 .logoFooter {
@@ -118,23 +118,31 @@ a {
 }
 .profil {
     width: 14vw;
-    height: 30vh;
-    border-radius: 200px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height: 36vh;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
 }
 
 @media screen and (min-width:1200px) {
     .lineProfil {
         border-left: 2px solid #272727;
     }
-
+    
 }
+
+@media screen and (max-width:1200px) {
+    .profil {
+        width: 25vw;
+        height: 35vh;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border: #202020 2px solid;
+    }
+}
+
 @media screen and (max-width:900px) {
 
     .profil {
-        width: 50vw;
+        width: 40vw;
         height: 35vh;
-        border-radius: 150px;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         border: #202020 2px solid;
     }
@@ -142,10 +150,10 @@ a {
 .hobby {
     width: 70vw;
     height: 40vw;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 .imgPortfolio {
-    width: 80%;
+    width: 40vw;
     border: 2px solid #272727;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition-duration: 1s;
@@ -156,8 +164,8 @@ a {
 
     .hobby {
         width: 40vw;
-        height: 250px;
-        border-radius: 20px;
+        height: 25vh;
+        /* border-radius: 20px; */
     }
     }
 @media screen and (max-width:1200px) {
@@ -169,7 +177,7 @@ a {
 @media screen and (max-width:1200px) and (min-width:900px){
 
 .imgPortfolio {
-    width: 80%;
+    width: 40vw;
     border: 2px solid #272727;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition-duration: 1s;
@@ -202,3 +210,32 @@ a {
 .fade {
     animation: 1s 1 linear fadeEffect alternate;
 }
+
+
+
+/* 3D HOVER */
+
+.cards {
+    perspective: 500px;
+    margin: 10px;
+}
+
+.card {
+    background-color: transparent;
+    width: 130px;
+    height: 135px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+  }
+  
+  .card:hover {
+    background-color: #202020;
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  }
+  
+  .card:hover .card_title {
+    transform: translateZ(50px);
+  }
+
